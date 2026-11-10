@@ -1,0 +1,10 @@
+on:
+  push:
+    branches:
+      - 'feature/css'
+  workflow_dispatch:
+
+# In the deploy job's upload step:
+- uses: actions/upload-pages-artifact@v3
+  with:
+    path: ./introduction
